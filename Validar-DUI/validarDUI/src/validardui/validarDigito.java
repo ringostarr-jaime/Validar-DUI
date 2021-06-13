@@ -17,7 +17,9 @@ public class validarDigito {
     boolean respuesta = false;
 
     public boolean validar(String dui, int longitud) {
-
+        if (dui.contains("-")) {
+            dui = dui.replace("-", "");
+        }
         digitos = String.valueOf(dui).toCharArray();
 
         try {

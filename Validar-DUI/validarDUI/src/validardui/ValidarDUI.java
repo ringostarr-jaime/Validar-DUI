@@ -26,7 +26,6 @@ public class ValidarDUI {
 
         System.out.println("Ingrese su numero de dui");
         dui = captura.nextLine();
-
         comprobar.validar(dui, longitud);
 
         //System.out.println("DUI "+dui);
